@@ -56,16 +56,6 @@ Find more components in our [premium NextJS themes](https://creativedesignsguru.
 - SEO-friendly
 - 🚀 Production-ready
 
-### Premium Themes ([Nextjs Themes](https://creativedesignsguru.com/category/nextjs/))
-
-| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [Indigo Nextjs Tailwind Theme](https://creativedesignsguru.com/landing-indigo-modern-react-theme/) |
-| --- | --- |
-| [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Indigo Nextjs Tailwind Theme](https://creativedesignsguru.com/assets/images/themes/landing-indigo-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-indigo-modern-react-theme/) |
-
-| [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/) | [Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-| --- | --- |
-| [![Purple Saas Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-purple-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-purple-modern-react-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-
 ### Requirements
 
 - Node.js and npm
