@@ -42,10 +42,10 @@ module.exports = {
           1000: "#303030",
           1100: "#272727",
         },
-        white: {
-          100: "#ffffff",
-          200: "#F3F3F3",
-        },
+        // white: {
+        //   100: "#ffffff",
+        //   200: "#F3F3F3",
+        // },
       },
       lineHeight: {
         hero: "4.5rem",
