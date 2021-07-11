@@ -2,10 +2,10 @@ import Link from "next/link";
 
 import { Button } from "../components/button/Button";
 import { HeroOneButton } from "../components/hero/HeroOneButton";
+import { Logo } from "../components/logo/Logo";
 import { NavbarTwoColumns } from "../components/navigation/NavbarTwoColumns";
 import { Video } from "../components/video/Video";
 import { Section } from "../layout/Section";
-import { Logo } from "./Logo";
 
 const Hero = () => (
   <div color="bg-gray-200">
@@ -29,7 +29,7 @@ const Hero = () => (
         />
       </div>
 
-      <div className="bg-black">
+      <div className="bg-gray-1100">
         <Video autoPlay src="/assets/videos/Landing_page_video.mp4" />
       </div>
     </div>
