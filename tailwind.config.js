@@ -41,7 +41,7 @@ module.exports = {
           800: "#2d3748",
           900: "#1a202c",
           1000: "#303030",
-          1100: "#272727",
+          1100: "#1f1f1f",
           1200: "#656565", // hero text color
           1300: "#F3F3F3", // hero background color
           1400: "#303030", // card colors
@@ -58,6 +58,9 @@ module.exports = {
       lineHeight: {
         hero: "4.5rem",
       },
+    },
+    fontFamily: {
+      sans: ["Open Sans"],
     },
   },
   variants: {},

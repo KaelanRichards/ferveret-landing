@@ -5,36 +5,36 @@ import { BarChartWrapper } from "../components/charts/BarChart";
 import { Video } from "../components/video/Video";
 
 const VerticalFeatures = () => (
-  <div className="grid-rows-6">
+  <div className="grid-rows-10">
     <div className="max-w-screen-xlg bg-gray-1100">
       <div className="text-center pt-32 pb-5">
-        <h2 className="text-6xl text-gray-200 font-bold">
+        <h2 className="text-4xl text-gray-200 font-bold">
           Air Cooled Data Centers Today
         </h2>
-        <div className="m-auto text-gray-200 text-2xl md:px-20">
+        <div className="m-auto text-gray-200 text-2xl py-12 md:px-20">
           About 40% of the total electricity consumed in a data center is used
           for cooling.
         </div>
-        <div className="mt-10  bg-gray-1100">
-          <Video autoPlay src="/assets/videos/video2.mp4" />
+        <div className="m-auto w-4/6 py-36 bg-gray-1100">
+          <Video autoPlay src="/assets/videos/video1.mp4" />
         </div>
       </div>
     </div>
     <div className="max-w-screen-xlg bg-gray-1100">
-      <div className="text-center pt-32 pb-5">
-        <h2 className="text-6xl text-gray-200 font-bold">
+      <div className="text-center pt-32 pb-5 flex flex-col space-y-12">
+        <h2 className="text-4xl text-gray-200 font-bold">
           FERVERET Technology
         </h2>
         <div className="mt-4 text-gray-200 text-2xl md:px-20">
           FERVERET tank can turn your air-cooled data center into an immersion
           cooled data center over night
         </div>
-        <div className="mt-10 mx-w-full w-full bg-gray-1100">
-          <Video autoPlay src="/assets/videos/video1.mp4" />
+        <div className="m-auto w-4/6 py-36 bg-gray-1100">
+          <Video autoPlay src="/assets/videos/video2.mp4" />
         </div>
       </div>
     </div>
-    <div className="flex flex-row justify-center space-x-12 bg-gray-1100 pt-16">
+    <div className="flex flex-row justify-center space-x-12 bg-gray-1100 pt-28 pb-96">
       <MetricCard
         title="Energy"
         description="Reduces the electricity consumption, due to
@@ -264,7 +264,7 @@ const VerticalFeatures = () => (
         />
       </div>
     </div>
-    <div className="flex flex-row justify-between bg-gray-1300">
+    <div className="flex flex-row justify-between bg-gray-1300 py-36">
       <div className="flex flex-col space-y-16 justify-start m-36">
         <div className="font-bold text-left text-gray-1200 text-5xl">
           Air cooling vs Immersion cooling
@@ -292,7 +292,7 @@ const VerticalFeatures = () => (
       <div className="text-bg-1200 text-3xl font-bold">
         Co2 emission reduction
       </div>
-      <div>
+      <div className="pt-8">
         Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </div>
@@ -300,7 +300,7 @@ const VerticalFeatures = () => (
     <div className="bg-gray-1300 ">
       <img
         src="/assets/images/hor-barchart.png"
-        className="m-auto w-full p-20"
+        className="m-auto w-3/4 p-20"
       />
     </div>
     <div className="bg-gray-1300 pt-24 flex flex-col items-center space-y-40">

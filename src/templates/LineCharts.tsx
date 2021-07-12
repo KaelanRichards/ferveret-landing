@@ -58,11 +58,11 @@ const energyConsumptionData = [
 
 const LineCharts = () => {
   return (
-    <div className="flex flex-col items-center p-36 bg-gray-1300">
-      <h1 className="text-6xl font-bold text-gray-1200  text-center">
+    <div className="flex flex-col items-center pt-96 pb-96 bg-gray-1300">
+      <h1 className="text-4xl font-bold text-gray-1200 p-12 text-center">
         Data is Dirty and Expensive
       </h1>
-      <p className="text-4xl text-gray-1200 font bold pl-36 pr-36 text-center">
+      <p className="text-2xl text-gray-1200 font bold pl-36 pr-36 text-center">
         A simple google search consumes the same amount of energy as turning on
         a 60W light bulb for 17 seconds
       </p>
