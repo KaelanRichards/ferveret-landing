@@ -1,35 +1,31 @@
-import Link from "next/link";
-
 import { Button } from "../components/button/Button";
-import { HeroOneButton } from "../components/hero/HeroOneButton";
 import { Logo } from "../components/logo/Logo";
-import { NavbarTwoColumns } from "../components/navigation/NavbarTwoColumns";
 import { Video } from "../components/video/Video";
-import { Section } from "../layout/Section";
 
 const Hero = () => (
-  <div color="bg-gray-200">
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <div />
-      </NavbarTwoColumns>
-    </Section>
-
-    <div className="grid grid-cols-2">
-      <div className="p-20">
-        <HeroOneButton
-          title={<>The most advanced and sustainable data center ever made.</>}
-          description="Enabling the most advanced, efficient, cost-competitive
-          and sustainable data center ever made."
-          button={
-            <Link href="">
-              <Button>Learn More</Button>
-            </Link>
-          }
-        />
+  <div className="bg-gray-1300">
+    <div className="flex flex-row">
+      <div className="p-10 flex-1 flex flex-col">
+        <div className="">
+          <Logo xl />
+        </div>
+        <div className="text-left  mr-12 pt-28">
+          <h1 className="text-6xl text-gray-1200 font-bold whitespace-pre-line leading-hero ">
+            The most advanced and sustainable data center ever made.
+          </h1>
+          <div className="text-3xl mt-20 mb-16 mr-12 text-gray-1200">
+            Enabling the most advanced, efficient, cost-competitive and
+            sustainable data center ever made.
+          </div>
+          <div className="flex flex-row justify-start">
+            <Button xl primary>
+              Learn More
+            </Button>
+          </div>
+        </div>
       </div>
 
-      <div className="bg-gray-1100">
+      <div className="bg-gray-1100 flex-1">
         <Video autoPlay src="/assets/videos/Landing_page_video.mp4" />
       </div>
     </div>

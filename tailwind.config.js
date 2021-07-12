@@ -22,12 +22,13 @@ module.exports = {
           200: "#C0EAFC",
           300: "#9ADDFB",
           400: "#4FC3F7",
-          500: "#03A9F4",
+          500: "#2870DE", // button color
           600: "#0398DC",
           700: "#026592",
           800: "#014C6E",
           900: "#013349",
-          1000: "2870DE",
+          1000: "#2870DE",
+          1100: "#ffffff", // white
         },
         gray: {
           100: "#f7fafc",
@@ -41,6 +42,13 @@ module.exports = {
           900: "#1a202c",
           1000: "#303030",
           1100: "#272727",
+          1200: "#656565", // hero text color
+          1300: "#F3F3F3", // hero background color
+          1400: "#303030", // card colors
+          1500: "#A8A8A8", // card text color
+          1600: "#131516", // black background
+          1700: "#E9E9E9", // profile card background color
+          1800: "#505050", // profile card text color
         },
         // white: {
         //   100: "#ffffff",

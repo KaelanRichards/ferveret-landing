@@ -2,6 +2,7 @@ import className from "classnames";
 
 type IButtonProps = {
   xl?: boolean;
+  primary?: boolean;
   children: string;
 };
 
@@ -10,7 +11,8 @@ const Button = (props: IButtonProps) => {
     btn: true,
     "btn-xl": props.xl,
     "btn-base": !props.xl,
-    "btn-primary": true,
+    "btn-primary": props.primary,
+    "btn-secondary": !props.primary,
   });
 
   return (
@@ -32,6 +34,14 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
+            @apply text-white bg-primary-500;
+          }
+
+          .btn-secondary {
+            @apply text-primary-500 bg-primary-1100;
+          }
+
+          .btn-secondary: :hover {
             @apply text-white bg-primary-500;
           }
 
