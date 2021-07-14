@@ -66,7 +66,7 @@ const LineCharts = () => {
         A simple google search consumes the same amount of energy as turning on
         a 60W light bulb for 17 seconds
       </p>
-      <div className=" container shadow-lg bg-primary-1100 flex flex-row items-start mt-36 h-96">
+      <div className=" container shadow-lg bg-primary-1100 flex flex-col md:flex-col items-start mt-36 h-96">
         <div className="w-full h-full p-2">
           <LineChart data={populationData} />
         </div>

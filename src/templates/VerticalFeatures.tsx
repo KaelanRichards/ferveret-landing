@@ -5,7 +5,7 @@ import { BarChartWrapper } from "../components/charts/BarChart";
 import { Video } from "../components/video/Video";
 
 const VerticalFeatures = () => (
-  <div className="grid-rows-10">
+  <div className="md:grid-rows-10">
     <div className="max-w-screen-xlg bg-gray-1100">
       <div className="text-center pt-32 pb-5">
         <h2 className="text-4xl text-gray-200 font-bold">
@@ -34,7 +34,7 @@ const VerticalFeatures = () => (
         </div>
       </div>
     </div>
-    <div className="flex flex-row justify-center space-x-12 bg-gray-1100 pt-28 pb-96">
+    <div className="flex flex-col space-y-4 md:flex-row justify-center md:space-x-12 bg-gray-1100 pt-28 pb-96">
       <MetricCard
         title="Energy"
         description="Reduces the electricity consumption, due to
@@ -242,53 +242,51 @@ const VerticalFeatures = () => (
       />
       <div />
     </div>
-    <div className="flex flex-row justify-between pt-32 bg-gray-1100">
+    <div className="flex md:flex-row flex-col justify-between pt-32 bg-gray-1100">
       <div className="flex flex-col space-y-72 justify-start">
-        <div className="font-bold text-right text-gray-1500 text-5xl">
+        <div className="font-bold md:text-right text-gray-1500 text-3xl text-center md:text-5xl">
           Immersion Cooling
         </div>
-        <div className="text-bg-1500 text-2xl text-center">
-          palceholderpalceholderpalceholderpalceholderpalceholder
+        <div className="text-bg-1500 text-2xl md:text-center w-full">
+          palceholder
         </div>
-        <div className="text-bg-1500 text-2xl text-center">
-          palceholderpalceholderpalceholderpalceholderpalceholder
-        </div>
-        <div className="text-bg-1500 text-2xl text-center">
-          palceholderpalceholderpalceholderpalceholderpalceholder
+        <div className="text-bg-1500 text-2xl md:text-center">palceholder</div>
+        <div className="text-bg-1500 text-2xl md:text-center">
+          palceholderpa
         </div>
       </div>
-      <div>
+      <div className="w-full">
         <img
           src="https://via.placeholder.com/800x1400"
           className="w-full h-full"
         />
       </div>
     </div>
-    <div className="flex flex-row justify-between bg-gray-1300 py-36">
-      <div className="flex flex-col space-y-16 justify-start m-36">
+    <div className="flex md:flex-row flex-col justify-between bg-gray-1300 py-36">
+      <div className="flex flex-col md:flex-1 space-y-16 justify-start md:m-36">
         <div className="font-bold text-left text-gray-1200 text-5xl">
           Air cooling vs Immersion cooling
         </div>
-        <div className="text-bg-1200 text-2xl text-left">
+        <div className="text-bg-1200 md:text-2xl text-left">
           Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </div>
-        <div className="text-bg-1200 text-2xl text-left">
+        <div className="text-bg-1200 md:text-2xl text-left">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt
         </div>
-        <div className="text-bg-1200 text-2xl text-left">
-          palceholderpalceholderpalceholderpalceholderpalceholder
+        <div className="text-bg-1200 md:text-2xl text-left">
+          palceholder palceholder palceholder palceholderpalceholder
         </div>
       </div>
-      <div className="container bg-primary-1100 h-96 m-auto">
+      <div className="container md:flex-1 bg-primary-1100 m:h-96 m-auto">
         <BarChartWrapper />
       </div>
     </div>
-    <div className="flex flex-col bg-gray-1300 text-center">
+    <div className="flex flex-col bg-gray-1300 pt-12 text-center">
       <div className="text-bg-1200 text-3xl font-bold">
         Co2 emission reduction
       </div>
@@ -300,11 +298,11 @@ const VerticalFeatures = () => (
     <div className="bg-gray-1300 ">
       <img
         src="/assets/images/hor-barchart.png"
-        className="m-auto w-3/4 p-20"
+        className="m-auto w-3/4 md:p-20 pt-5"
       />
     </div>
     <div className="bg-gray-1300 pt-24 flex flex-col items-center space-y-40">
-      <div className="">
+      <div className="flex md:flex-row w-full">
         <hr
           style={{
             borderTop: "7px solid #DCDCDC",
@@ -315,9 +313,41 @@ const VerticalFeatures = () => (
 
       <div className=" text-4xl font-bold text-gray-1800">Our Founders</div>
     </div>
-    <div className="bg-gray-1300 flex flex-row justify-center space-x-44 p-24 pb-36">
-      <div className="container w-72 h-96 bg-gray-1700" />
-      <div className="w-72 h-96 bg-gray-1700" />
+    <div className="bg-gray-1300 flex lg:flex-row md:flex-row sm:flex-row flex-col justify-center space-y-5 lg-space-x-5 m-p-24 pb-36">
+      <div className="p-10 m-auto">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            className="w-3/4 h-3/4 m-auto mt-6"
+            src="/assets/images/founder1.png"
+            alt="Reza Azizian"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Reza Azizian</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="p-10">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            className="w-3/4 h-3/4 m-auto mt-6"
+            src="/assets/images/founder2.png"
+            alt="Matteo Bucci"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Matteo Bucci</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
