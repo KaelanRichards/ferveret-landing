@@ -58,7 +58,7 @@ const energyConsumptionData = [
 
 const LineCharts = () => {
   return (
-    <div className="flex flex-col items-center pt-96 pb-96 bg-gray-1300">
+    <div className="flex flex-col items-center pt-40 pb-96 bg-gray-1300">
       <h1 className="text-4xl font-bold text-gray-1200 p-12 text-center">
         Data is Dirty and Expensive
       </h1>

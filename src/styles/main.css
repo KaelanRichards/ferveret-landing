@@ -3,3 +3,10 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Manrope';
+    src: local('Manrope'), url(/assets/fonts/ttf/Manrope-Medium.ttf) format('ttf');
+  }
+}

@@ -46,9 +46,11 @@ module.exports = {
           1300: "#F3F3F3", // hero background color
           1400: "#303030", // card colors
           1500: "#A8A8A8", // card text color
-          1600: "#131516", // black background
+          1600: "#272727", // black background
           1700: "#E9E9E9", // profile card background color
           1800: "#505050", // profile card text color
+          1900: "#D1D1D1", // metric card text color
+          2000: "#131516", // secondary black background
         },
         // white: {
         //   100: "#ffffff",
@@ -58,9 +60,12 @@ module.exports = {
       lineHeight: {
         hero: "4.5rem",
       },
-    },
-    fontFamily: {
-      sans: ["Open Sans"],
+      backgroundImage: {
+        "immersion-cooling": "url('/assets/images/immersionCooling.png')",
+      },
+      fontFamily: {
+        sans: ["Manrope", "Roboto", "Helvetica", "Arial", "sans-serif"],
+      },
     },
   },
   variants: {},

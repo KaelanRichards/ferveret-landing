@@ -6,13 +6,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head>
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="//fonts.googleapis.com/css?family=Open+Sans"
-          />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
