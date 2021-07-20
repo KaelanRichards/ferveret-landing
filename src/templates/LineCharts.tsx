@@ -60,11 +60,12 @@ const LineCharts = () => {
   return (
     <div className="flex flex-col items-center pt-40 pb-96 bg-gray-1300">
       <h1 className="text-4xl font-bold text-gray-1200 p-12 text-center">
-        Data is Dirty and Expensive
+        Data Centers are Dirty and Expensive
       </h1>
       <p className="text-2xl text-gray-1200 font bold pl-36 pr-36 text-center">
-        A simple google search consumes the same amount of energy as turning on
-        a 60W light bulb for 17 seconds
+        If nothing changes, data centers will generate about 14% of the total
+        worldwide carbon emission by 2040. About 40% of these emissions is due
+        to inefficient cooling, which is also expensive.
       </p>
       <div className=" container shadow-lg bg-primary-1100 flex flex-col md:flex-col items-start mt-36 h-96">
         <div className="w-full h-full p-2">

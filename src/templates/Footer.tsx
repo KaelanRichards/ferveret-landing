@@ -6,7 +6,7 @@ import { Logo } from "../components/logo/Logo";
 import { Section } from "../layout/Section";
 
 const Footer = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-primary-1100">
     <Section>
       <CenteredFooter
         logo={<Logo />}

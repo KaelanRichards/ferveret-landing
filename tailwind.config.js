@@ -41,7 +41,7 @@ module.exports = {
           800: "#2d3748",
           900: "#1a202c",
           1000: "#303030",
-          1100: "#1f1f1f",
+          1100: "#080708",
           1200: "#656565", // hero text color
           1300: "#F3F3F3", // hero background color
           1400: "#303030", // card colors
@@ -50,7 +50,8 @@ module.exports = {
           1700: "#E9E9E9", // profile card background color
           1800: "#505050", // profile card text color
           1900: "#D1D1D1", // metric card text color
-          2000: "#131516", // secondary black background
+          2000: "#000000", // secondary black background
+          2100: "#3E3E3E", // founder card text color
         },
         // white: {
         //   100: "#ffffff",
@@ -60,9 +61,7 @@ module.exports = {
       lineHeight: {
         hero: "4.5rem",
       },
-      backgroundImage: {
-        "immersion-cooling": "url('/assets/images/immersionCooling.png')",
-      },
+
       fontFamily: {
         sans: ["Manrope", "Roboto", "Helvetica", "Arial", "sans-serif"],
       },

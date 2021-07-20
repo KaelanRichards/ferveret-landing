@@ -9,18 +9,22 @@ type FounderCardProps = {
 const FounderCard = (props: FounderCardProps) => {
   return (
     <div
-      className="bg-gray-1700 flex flex-col flex-shrink-0 px-5"
+      className="bg-gray-1700 flex flex-col flex-shrink-0 p-6"
       style={{ height: "35rem", width: "30rem" }}
     >
-      <div className="pt-5 px-4">
+      <div className="p-5">
         <img
-          className="w-auto h-auto m-auto"
+          className="w-full h-full m-auto"
           src={props.image}
           alt={props.name}
         />
       </div>
-      <div className="font-bold text-xl text-left pb-4 mb-2">{props.name}</div>
-      <p className="text-gray-700 text-base text center">{props.description}</p>
+      <div className="font-bold text-gray-2100 text-xl text-left pt-6 pl-5 pb-4 mb-2">
+        {props.name}
+      </div>
+      <p className="text-gray-2100 text-base text center px-5">
+        {props.description}
+      </p>
     </div>
   );
 };
