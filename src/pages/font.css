@@ -4,3 +4,9 @@
 div {
   font-family: 'Mulish', sans-serif;
 }
+
+.gradient {
+  background: -webkit-linear-gradient(left,#2ba7dd, #272966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

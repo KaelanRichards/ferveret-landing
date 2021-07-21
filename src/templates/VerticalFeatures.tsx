@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect } from "react";
 
 import Aos from "aos";
@@ -22,7 +24,10 @@ const VerticalFeatures = () => {
         <h1 className="text-5xl font-bold text-gray-1200 pt- p-12 text-center">
           Data centers are dirty and expensive{" "}
         </h1>
-        <p className="text-2xl text-gray-1200 text-center" data-aos="fade-up">
+        <p
+          className="text-2xl text-gray-1200 text-center sm:px-12 md:px-16 lg:px-60"
+          data-aos="fade-up"
+        >
           If nothing changes, data centers will generate about 14% of the total
           worldwide carbon emission by 2040. About 40% of these emissions is due
           to inefficient cooling, which is also expensive.
@@ -32,11 +37,11 @@ const VerticalFeatures = () => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center pt-40 bg-gray-1300 px-6 sm:px-12 md:px-16 lg:px-60 "
-        style={{ paddingTop: "20%", paddingBottom: "20%" }}
+        className="flex flex-col items-center pt-30 bg-gray-1300 px-6 sm:px-12 md:px-16 lg:px-60 "
+        style={{ paddingTop: "15%", paddingBottom: "25%" }}
       >
         <h1 className="text-6xl font-bold text-gray-1200  p-12 text-center">
-          FERVERET technology
+          <span className="gradient">FERVERET</span> technology
         </h1>
         <p className="text-3xl text-gray-1200 text-center">
           Eliminates this waste of money and the associated emissions.
@@ -44,7 +49,11 @@ const VerticalFeatures = () => {
       </div>
       <div className="max-w-screen-xlg bg-gray-1100 px-6 sm:px-12 md:px-16 lg:px-60">
         <div className="text-center pt-36 pb-5">
-          <h2 className="text-4xl text-gray-200 font-bold">
+          <h2
+            className="text-4xl text-gray-200 font-bold pt-40"
+            // eslint-disable-next-line
+            // style={{ fontWeight: "600" }}
+          >
             Data centers today – Air cooled
           </h2>
 
@@ -58,7 +67,8 @@ const VerticalFeatures = () => {
           <div className="m-auto text-gray-200 text-1xl pb-12 text-center">
             <p
               style={{
-                fontWeight: "bold",
+                // eslint-disable-next-line
+                // fontWeight: "600",
                 fontSize: "28px",
                 paddingLeft: "25%",
                 paddingRight: "25%",
@@ -69,17 +79,17 @@ const VerticalFeatures = () => {
             </p>
           </div>
           <ul
-            className="flex flex-row text-left space-x-10"
+            className="flex flex-row text-left space-x-10  pt-32"
             style={{ fontSize: "20px" }}
           >
-            <li className="text-gray-200">
-              • 40% of the total electricity in a typical
-              <br /> data centers today is wasted for cooling the servers.
+            <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
+              • 40% of the total electricity in a typical data centers today is
+              wasted for cooling the servers.
             </li>
-            <li className="text-gray-200">
+            <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
               • Air cooling results in a waste of space.
             </li>
-            <li className="text-gray-200">
+            <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
               • Air cooling has high maintenance and labor costs
             </li>
           </ul>
@@ -90,8 +100,13 @@ const VerticalFeatures = () => {
         style={{ paddingTop: "10%" }}
       >
         <div className="text-center pt-32 pb-5 flex flex-col space-y-12">
-          <h2 className="text-4xl text-gray-200 font-bold">
-            FERVERET technology – Subcooled boiling
+          <h2
+            className="text-4xl text-gray-200 font-bold"
+            // eslint-disable-next-line
+            // style={{ fontWeight: "600" }}
+          >
+            <span className="gradient">FERVERET</span> technology – Subcooled
+            boiling
           </h2>
           <div
             className="mt-4 text-gray-200 text-1xl"
@@ -137,25 +152,28 @@ const VerticalFeatures = () => {
           icon={<img src="/assets/icons/performanceIcon.png" />}
         />
       </div>
-      <div className="flex md:flex-row flex-col  bg-gray-2000 ">
+      <div className="flex md:flex-row flex-col  bg-gray-2000  ">
         <div
           className="flex flex-col w-1/2 justify-start pl-6 sm:pl-12 md:pl-16 lg:pl-35"
           data-aos="fade-right"
         >
           <div
-            className="font-bold md:text-left text-gray-1900 text-3xl text-center md:text-2xl pt-10"
+            className="font-bold md:text-left text-gray-1900 text-3xl text-center md:text-2xl pt-10 "
             style={{ paddingBottom: "2%" }}
           >
             How does ferveret technology work?
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left w-full">
-            <p style={{ lineHeight: "1.5", fontSize: "1.1rem" }}>
+          <div className="text-gray-1900 text-1xl md:text-left w-full pr-10">
+            <p
+              className="pr-10"
+              style={{ lineHeight: "1.5", fontSize: "1.1rem" }}
+            >
               Our technology uses a cooling process called subcooled nucleate
               boiling. This is the cooling process used in nuclear reactors, by
               which our tank design is inspired.
             </p>
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left w-full">
+          <div className="text-gray-1900 text-1xl md:text-left w-full pr-10 pt-10">
             <p style={{ lineHeight: "1.5" }}>
               {" "}
               Our tanks can turn your air-cooled data center into a
@@ -168,7 +186,7 @@ const VerticalFeatures = () => {
           >
             How are technology is different than our competitors?
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left">
+          <div className="text-gray-1900 text-1xl md:text-left pr-10">
             <p style={{ lineHeight: "1.5", fontSize: "1.1rem" }}>
               There are many companies in the immersion cooling space. Their
               technology is either based on single The picture of Ferveret data
@@ -178,14 +196,14 @@ const VerticalFeatures = () => {
               one.
             </p>
           </div>
-          <div className="text-gray-1900  md:text-left">
+          <div className="text-gray-1900  md:text-left pr-10">
             <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
               At Ferveret, we understand pro and cons of both techniques, so our
               technology combines both. We take advantages of their pros, and
               eliminate the cons
             </p>
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left">
+          <div className="text-gray-1900 text-1xl md:text-left pr-10">
             <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
               Subcooled nucleate boiling allows removing exceptionally high heat
               fluxes from processors or other heat generating components. While
@@ -229,11 +247,16 @@ const VerticalFeatures = () => {
             Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.Lorem Ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            aliquip ex ea commodo consequat.
+          </div>
+          <div
+            className="text-gray-1200 md:text-1xl text-left"
+            data-aos="fade-right"
+          >
+            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </div>
 
           <div
