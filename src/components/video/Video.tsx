@@ -18,7 +18,7 @@ const Video = (props: IVideoProps) => {
   return (
     // <Waypoint onEnter={() => handlePlayVideo()}>
     // ref={vidRef}
-    <video className="mx-w-full h-full w-full" autoPlay muted loop>
+    <video className="mx-w-full h-full w-full" playsInline autoPlay muted loop>
       <source src={src} type="video/mp4" />
     </video>
     // </Waypoint>
