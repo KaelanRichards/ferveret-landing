@@ -18,7 +18,7 @@ const MetricCard = (props: MetricCardProps) => {
       <div className="text-gray-1900 pt-6  text-2xl font-bold text-center">
         {props.title}
       </div>
-      <div className="text-gray-1900  text-sm text-center mx-12 p-5 pb-7">
+      <div className="text-gray-1900  text-sm text-center mx-2 p-5 pb-7">
         {props.description}
       </div>
     </div>

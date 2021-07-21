@@ -27,7 +27,8 @@ const Hero = () => {
               className="lg:text-4xl text-2xl text-gray-1200 font-bold"
               data-aos="fade-up"
             >
-              The most advanced and sustainable data center ever made.
+              /fervēret/ Ferveret is a Latin word for boiling, which is what we
+              believe will revolutionize the future of data centers.
             </h1>
             <hr
               className="mt-20"
@@ -35,8 +36,7 @@ const Hero = () => {
                 height: "3px",
                 border: "none",
                 // background: "rgb(255,255,255)",
-                background:
-                  "linear-gradient(90deg, rgba(255,255,255,1) 4%, rgba(78,129,249,1) 51%, rgba(255,255,255,1) 98%)",
+                background: "grey",
               }}
               data-aos="fade-up"
             />
@@ -44,20 +44,35 @@ const Hero = () => {
               className="text-1xl mt-12 mb-16 mr-12 text-gray-1200"
               data-aos="fade-up"
             >
-              Enabling the most advanced, efficient, cost-competitive and
-              sustainable data center ever made.
+              <p style={{ lineHeight: "2" }}>
+                Ferveret develops liquid cooling technology enabling the most
+                advanced, efficient, costcompetitive and sustainable data center
+                ever made. We use the same cooling technology as nuclear power
+                plants to save data centers ~96% in cooling cost and reduce
+                their carbon footprint by 40% while increasing computer chip
+                performance by ~2X.
+              </p>
             </div>
             <div
               className="flex flex-row justify-start mt-20"
               data-aos="fade-up"
             >
-              <Button primary>Learn More</Button>
+              <input
+                style={{ width: "80%", padding: "2%" }}
+                placeholder="email"
+                type="text"
+                className="text-line"
+              />
+
+              <Button primary>
+                <span style={{ fontSize: "16px" }}>Learn More</span>
+              </Button>
             </div>
           </div>
         </div>
 
         <div className="bg-gray-1100 md:w-7/12  h-full">
-          <Video src="/assets/videos/video3.mp4" />
+          <Video src="/assets/videos/video4.mp4" />
         </div>
       </div>
     </div>
