@@ -16,7 +16,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-gray-1300">
+    <div className="bg-gray-1300" style={{ fontFamily: "Mulish" }}>
       <div className="flex flex-col md:flex-row md:pl-5">
         <div className="md:p-10 md:w-6/12  flex flex-col">
           <div className="p-4">
