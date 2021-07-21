@@ -37,13 +37,13 @@ const VerticalFeatures = () => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center pt-30 bg-gray-1300 px-6 sm:px-12 md:px-16 lg:px-60 "
+        className="flex flex-col items-center pt-30 bg-gray-1300 px-6 sm:px-6 md:px-16 lg:px-60 "
         style={{ paddingTop: "15%", paddingBottom: "25%" }}
       >
-        <h1 className="text-6xl font-bold text-gray-1200  p-12 text-center">
+        <h1 className="md:text-6xl text-5xl font-bold text-gray-1200  p-12 text-center">
           <span className="gradient">FERVERET</span> technology
         </h1>
-        <p className="text-3xl text-gray-1200 text-center">
+        <p className="md:text-3xl text-2xl text-gray-1200 text-center">
           Eliminates this waste of money and the associated emissions.
         </p>
       </div>
@@ -52,7 +52,7 @@ const VerticalFeatures = () => {
           <h2
             className="text-4xl text-gray-200 font-bold pt-40"
             // eslint-disable-next-line
-            // style={{ fontWeight: "600" }}
+            style={{ fontWeight: "bolder" }}
           >
             Data centers today – Air cooled
           </h2>
@@ -62,24 +62,19 @@ const VerticalFeatures = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <Video src="/assets/videos/video1.mp4" delay={1000} />
+            <Video src="/assets/videos/video1.mp4" />
           </div>
           <div className="m-auto text-gray-200 text-1xl pb-12 text-center">
             <p
-              style={{
-                // eslint-disable-next-line
-                // fontWeight: "600",
-                fontSize: "28px",
-                paddingLeft: "25%",
-                paddingRight: "25%",
-              }}
+            className="lg:px-60 text-3xl"
+            style={{fontWeight: "bolder"}}
             >
               All these issues are consequence of the poor heat removal
               capability of air cooling.
             </p>
           </div>
           <ul
-            className="flex flex-row text-left space-x-10  pt-32"
+            className="flex lg:flex-row flex-col text-left space-x-10  pt-32"
             style={{ fontSize: "20px" }}
           >
             <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
@@ -103,7 +98,7 @@ const VerticalFeatures = () => {
           <h2
             className="text-4xl text-gray-200 font-bold"
             // eslint-disable-next-line
-            // style={{ fontWeight: "600" }}
+            style={{ fontWeight: "bolder" }}
           >
             <span className="gradient">FERVERET</span> technology – Subcooled
             boiling
@@ -123,7 +118,7 @@ const VerticalFeatures = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <Video src="/assets/videos/video2.mp4" delay={1000} />
+            <Video src="/assets/videos/video2.mp4" />
           </div>
         </div>
       </div>
@@ -152,20 +147,20 @@ const VerticalFeatures = () => {
           icon={<img src="/assets/icons/performanceIcon.png" />}
         />
       </div>
-      <div className="flex md:flex-row flex-col  bg-gray-2000  ">
+      <div className="flex lg:flex-row flex-col  bg-gray-2000  ">
         <div
-          className="flex flex-col w-1/2 justify-start pl-6 sm:pl-12 md:pl-16 lg:pl-35"
+          className="flex flex-col lg:w-1/2 lg:justify-start px-6 sm:pl-12 md:pl-16 lg:pl-35"
           data-aos="fade-right"
         >
           <div
-            className="font-bold md:text-left text-gray-1900 text-3xl text-center md:text-2xl pt-10 "
+            className="font-bold lg:text-left text-gray-1900 text-3xl text-center md:text-2xl pt-10 "
             style={{ paddingBottom: "2%" }}
           >
             How does ferveret technology work?
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left w-full pr-10">
+          <div className="text-gray-1900 text-1xl md:text-left text-center w-full lg:pr-10">
             <p
-              className="pr-10"
+              className="lg:pr-10"
               style={{ lineHeight: "1.5", fontSize: "1.1rem" }}
             >
               Our technology uses a cooling process called subcooled nucleate
@@ -173,7 +168,7 @@ const VerticalFeatures = () => {
               which our tank design is inspired.
             </p>
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left w-full pr-10 pt-10">
+          <div className="text-gray-1900 text-1xl md:text-left text-center lg:pr-10 pt-10">
             <p style={{ lineHeight: "1.5" }}>
               {" "}
               Our tanks can turn your air-cooled data center into a
@@ -186,7 +181,7 @@ const VerticalFeatures = () => {
           >
             How are technology is different than our competitors?
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left pr-10">
+          <div className="text-gray-1900 text-1xl md:text-left md:pr-10 text-center">
             <p style={{ lineHeight: "1.5", fontSize: "1.1rem" }}>
               There are many companies in the immersion cooling space. Their
               technology is either based on single The picture of Ferveret data
@@ -196,14 +191,14 @@ const VerticalFeatures = () => {
               one.
             </p>
           </div>
-          <div className="text-gray-1900  md:text-left pr-10">
+          <div className="text-gray-1900  md:text-left md:pr-10 text-center">
             <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
               At Ferveret, we understand pro and cons of both techniques, so our
               technology combines both. We take advantages of their pros, and
               eliminate the cons
             </p>
           </div>
-          <div className="text-gray-1900 text-1xl md:text-left pr-10">
+          <div className="text-gray-1900 text-1xl md:text-left md:pr-10 text-center">
             <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
               Subcooled nucleate boiling allows removing exceptionally high heat
               fluxes from processors or other heat generating components. While
@@ -316,7 +311,7 @@ const VerticalFeatures = () => {
           Our Founders
         </div>
       </div>
-      <div className="bg-gray-1300 flex flex-col xl:flex-row xl:space-x-3 justify-evenly pb-40 pt-8 px:8 sm:px-12 md:px-16 lg:px-60 items-center">
+      <div className="bg-gray-1300 flex flex-col xl:flex-row xl:space-x-3 justify-evenly pb-40 pt-8 px:2 sm:px-12 md:px-16 lg:px-60 items-center">
         <FounderCard
           name="Reza Azizian"
           description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.

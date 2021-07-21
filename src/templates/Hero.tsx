@@ -17,8 +17,8 @@ const Hero = () => {
 
   return (
     <div className="bg-gray-1300" style={{ fontFamily: "Mulish" }}>
-      <div className="flex flex-col md:flex-row md:pl-5">
-        <div className="md:p-10 md:w-6/12  flex flex-col">
+      <div className="flex flex-col lg:flex-row md:pl-5 ">
+        <div className="md:p-10 lg:w-6/12  flex flex-col ">
           <div className="p-4">
             <Logo />
           </div>
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="bg-gray-1100 md:w-7/12  h-full">
+        <div className="bg-gray-1100 lg:w-7/12  h-full">
           <Video src="/assets/videos/video4.mp4" />
         </div>
       </div>
