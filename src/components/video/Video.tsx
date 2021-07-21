@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+
+import { Waypoint } from "react-waypoint";
 
 type IVideoProps = {
   src: string;
-  // delay?: number;
+  delay?: number;
 };
 
 const Video = (props: IVideoProps) => {
-  // const vidRef = useRef<HTMLVideoElement>(null);
-  const { src } = props;
-  // const handlePlayVideo = () => {
-  //   setTimeout(() => {
-  //     // eslint-disable-next-line
-  //     vidRef?.current?.play() ?? console.log("Video not found");
-  //   }, delay);
-  // };
+  const vidRef = useRef<HTMLVideoElement>(null);
+  const { src, delay } = props;
+  const handlePlayVideo = () => {
+    setTimeout(() => {
+      // eslint-disable-next-line
+      vidRef?.current?.play() ?? console.log("Video not found");
+    }, delay);
+  };
 
   return (
-    // <Waypoint onEnter={() => handlePlayVideo()}>
-    // ref={vidRef}
-    <video className="mx-w-full h-full w-full" playsInline autoPlay muted loop>
-      <source src={src} type="video/mp4" />
-    </video>
-    // </Waypoint>
+    <Waypoint onEnter={() => handlePlayVideo()}>
+      <video
+        className="mx-w-full h-full w-full"
+        playsInline
+        muted
+        loop
+        ref={vidRef}
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+    </Waypoint>
   );
 };
 

@@ -62,7 +62,7 @@ const VerticalFeatures = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <Video src="/assets/videos/video1.mp4" />
+            <Video src="/assets/videos/video1.mp4" delay={1500}/>
           </div>
           <div className="m-auto text-gray-200 text-1xl pb-12 text-center">
             <p
@@ -118,7 +118,7 @@ const VerticalFeatures = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <Video src="/assets/videos/video2.mp4" />
+            <Video src="/assets/videos/video2.mp4" delay={1500}/>
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@ const VerticalFeatures = () => {
           </div>
         </div>
         <div className="w-full h-full">
-          <Video src="/assets/videos/video3.mp4" />
+          <Video src="/assets/videos/video3.mp4" delay={100}/>
         </div>
       </div>
       <div className="flex xl:flex-row flex-col space-x-40 bg-gray-1300 py-36 px-4 sm:px-12 md:px-16 lg:px-40">
