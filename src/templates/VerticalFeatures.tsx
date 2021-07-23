@@ -18,10 +18,10 @@ const VerticalFeatures = () => {
   return (
     <div className="md:grid-rows-10">
       <div className="flex flex-col items-center pt-60 bg-gray-1300 px-6 sm:px-12 md:px-16 lg:px-60">
-        <h1 className="text-5xl font-bold text-gray-1200 p-12 text-center">
+        <h1 className="lg:text-5xl text-4xl font-bold text-gray-1200 p-12 text-center">
           Data centers are dirty and expensive{" "}
         </h1>
-        <p className="text-2xl text-gray-1200 text-center" data-aos="fade-up">
+        <p className="text-1xl text-gray-1200 text-center" data-aos="fade-up">
           If nothing changes, data centers will generate about 14% of the total
           worldwide carbon emission by 2040. About 40% of these emissions is due
           to inefficient cooling, which is also expensive.
@@ -35,40 +35,37 @@ const VerticalFeatures = () => {
         style={{ paddingBottom: "15%" }}
       >
         <h1
-          className="md:text-5xl text-5xl font-bold text-gray-1200  p-12 text-center"
+          className="md:text-5xl text-3xl font-bold text-gray-1200  p-12 text-center"
           data-aos="fade-up"
         >
           <span className="gradient">ferveret</span> technology
         </h1>
         <p
-          className="md:text-2xl text-2xl text-gray-1200 text-center"
+          className="md:text-2xl text-1xl text-gray-1200 text-center"
           data-aos="fade-up"
         >
           Eliminates this waste of money and the associated emissions.
         </p>
       </div>
-      <div className="max-w-screen-xlg bg-gray-1100 px-6 sm:px-12 md:px-16 lg:px-60">
+      <div className="max-w-screen-xlg bg-gray-1100 px-6 sm:px-12 md:px-16 xl:px-60">
         <div className="text-center pt-36 pb-5">
           <h2
-            className="lg:text-6xl text-5xl text-gray-200 font-bold pt-8"
+            className="lg:text-6xl text-4xl text-gray-200 font-bold pt-8"
             // eslint-disable-next-line
             style={{ fontWeight: "bolder" }}
           >
             Data centers today – Air cooled
           </h2>
-          <div className="m-auto text-gray-200 lg:text-1xl pb-12 text-center">
+          <div className="m-auto text-gray-200 pb-12 text-center">
             <p
-              className="lg:px-60 text-3xl pt-28"
+              className="xl:px-60 xl:text-3xl text-2xl space-y-2 xl:pt-28 pt-12"
               style={{ fontWeight: "bolder" }}
             >
               Air cooling inefficiencys in heat removal lead to the following
               consequences
             </p>
           </div>
-          <ul
-            className="flex flex-col text-left lg:pl-56 "
-            style={{ fontSize: "20px" }}
-          >
+          <ul className="flex flex-col text-left xl:pl-56 text-1xl">
             <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
               • 40% of the total electricity in a typical data centers today is
               wasted for cooling the servers.
@@ -90,12 +87,12 @@ const VerticalFeatures = () => {
         </div>
       </div>
       <div
-        className="max-w-screen-xlg bg-gray-1100 px-6 sm:px-12 md:px-16 lg:px-60"
+        className="max-w-screen-xlg bg-gray-1100 px-6 sm:px-12 md:px-16 xl:px-60"
         style={{ paddingTop: "5%" }}
       >
         <div className="text-center pt-32 pb-5 flex flex-col space-y-12">
           <h2
-            className="lg:text-6xl text-5xl text-gray-200 font-bold"
+            className="lg:text-6xl text-4xl text-gray-200 font-bold"
             // eslint-disable-next-line
             style={{ fontWeight: "bolder" }}
           >
@@ -107,18 +104,15 @@ const VerticalFeatures = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <div className="m-auto text-gray-200 lg:text-1xl pb-12 text-center">
+            <div className="m-auto text-gray-200 pb-12 text-center">
               <p
-                className="lg:px-36 text-3xl pt-6"
+                className="xl:px-36 xl:text-3xl text-2xl pt-6"
                 style={{ fontWeight: "bolder" }}
               >
                 Eliminates this waste of money and the associated emissions.
               </p>
             </div>
-            <ul
-              className="flex flex-col text-left lg:px-36 md:px-16 sm:px-12 "
-              style={{ fontSize: "20px" }}
-            >
+            <ul className="flex flex-col text-left xl:text-1xl space-y-2 xl:px-36 md:px-16 sm:px-12 ">
               <li className="text-gray-200 sm:px-12 md:px-16 lg:px-30">
                 • Will save 96% of the energy wasted for cooling in air-cooled
                 data center.
@@ -137,7 +131,7 @@ const VerticalFeatures = () => {
             </ul>
           </div>
           <div
-            className="m-auto w-full py-32 bg-gray-1100"
+            className="m-auto w-full py-16 xl:py-32 bg-gray-1100"
             data-aos="fade-up"
             data-aos-delay="1000"
           >
@@ -171,16 +165,16 @@ const VerticalFeatures = () => {
         />
       </div> */}
       <div
-        className="font-bold lg:text-left text-gray-1200 text-3xl text-center md:text-6xl pt-44 pb-12 px-6 sm:pl-12 md:pl-16 lg:pl-35 "
+        className="font-bold lg:text-left text-gray-1200 bg-gray-1300 text-3xl text-center md:text-6xl pt-44 pb-12 px-6 sm:pl-12 md:pl-16 lg:pl-35 "
         style={{ fontWeight: "bolder" }}
       >
         <h2>
           How does <span className="gradient">ferveret</span> technology work?
         </h2>
       </div>
-      <div className="flex lg:flex-row flex-colbg-gray-2000  pb-48 ">
+      <div className="flex xl:flex-row flex-col bg-gray-1300  pb-48 ">
         <div
-          className="flex flex-col lg:w-1/2 lg:justify-start px-6 sm:pl-12 md:pl-16 lg:pl-35"
+          className="flex flex-col xl:w-1/2 w-full justify-center xl:justify-start px-6 sm:pl-12 md:pl-16 lg:pl-35"
           data-aos="fade-right"
         >
           <div className="text-gray-1200 text-1xl md:text-left text-center w-full lg:px-10">
@@ -220,7 +214,7 @@ const VerticalFeatures = () => {
               and eliminate the cons
             </p>
           </div>
-          <div className="text-gray-1200 text-1xl md:text-left md:px-10 text-center pt-5">
+          <div className="text-gray-1200 text-1xl md:text-left md:px-10 text-center pb-7 pt-5">
             <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
               • Subcooled nucleate boiling allows removing exceptionally high
               heat fluxes from processors or other heat generating components.
@@ -233,7 +227,7 @@ const VerticalFeatures = () => {
             </p>
           </div>
         </div>
-        <div className="w-7/12 h-full">
+        <div className="xl:w-7/12 h-full">
           <Video src="/assets/videos/video3.mp4" delay={100} />
         </div>
       </div>

@@ -40,7 +40,7 @@ const Hero = () => {
               data-aos="fade-up"
             />
             <div
-              className="text-4xl mt-12 mb-16 mr-12 text-gray-1200"
+              className="xl:text-4xl text-3xl mt-12 mb-16 mr-12 text-gray-1200"
               data-aos="fade-up"
             >
               <p>
@@ -51,7 +51,7 @@ const Hero = () => {
               </p>
             </div>
             <div
-              className="flex flex-row justify-start mt-20"
+              className="flex flex-row justify-start mt-20 pb-12"
               data-aos="fade-up"
             >
               <input
