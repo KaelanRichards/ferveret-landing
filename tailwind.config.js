@@ -53,6 +53,11 @@ module.exports = {
           2000: "#000000", // secondary black background
           2100: "#3E3E3E", // founder card text color
         },
+        logo: {
+          100: "#2FA9DE",
+          200: "#2E5E92",
+          300: "#272A67",
+        },
         // white: {
         //   100: "#ffffff",
         //   200: "#F3F3F3",

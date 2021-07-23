@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 
 import { Button } from "../components/button/Button";
-import { Logo } from "../components/logo/Logo";
 import { Video } from "../components/video/Video";
 
 const Hero = () => {
@@ -18,18 +17,18 @@ const Hero = () => {
   return (
     <div className="bg-gray-1300" style={{ fontFamily: "Mulish" }}>
       <div className="flex flex-col lg:flex-row md:pl-5 ">
-        <div className="md:p-10 lg:w-6/12  flex flex-col ">
-          <div className="p-4">
-            <Logo />
-          </div>
-          <div className="md:text-left md:mr-12 mt-12 p-6">
+        <div className="md:px-10 px-6 lg:w-6/12  flex flex-col ">
+          <div className="md:text-left md:mr-12 xl:pt-12 xl:px-12 pt-4 flex-shrink-0">
             <h1
-              className="lg:text-4xl text-2xl text-gray-1200 font-bold"
+              className="lg:text-2xl text-2xl text-gray-1200 font-bold"
               data-aos="fade-up"
             >
-              /fervēret/ Ferveret is a Latin word for boiling, which is what we
-              believe will revolutionize the future of data centers.
+              /fervēret/
             </h1>
+            <p data-aos="fade-up">
+              Ferveret is a Latin word for boiling, which is what we believe
+              will revolutionize the future of data centers.
+            </p>
             <hr
               className="mt-20"
               style={{
@@ -41,16 +40,14 @@ const Hero = () => {
               data-aos="fade-up"
             />
             <div
-              className="text-1xl mt-12 mb-16 mr-12 text-gray-1200"
+              className="text-4xl mt-12 mb-16 mr-12 text-gray-1200"
               data-aos="fade-up"
             >
-              <p style={{ lineHeight: "2" }}>
-                Ferveret develops liquid cooling technology enabling the most
-                advanced, efficient, costcompetitive and sustainable data center
-                ever made. We use the same cooling technology as nuclear power
-                plants to save data centers ~96% in cooling cost and reduce
-                their carbon footprint by 40% while increasing computer chip
-                performance by ~2X.
+              <p>
+                Ferveret develops{" "}
+                <span className="text-logo-100">liquid cooling technology</span>{" "}
+                enabling the most advanced, efficient, cost-competitive and
+                sustainable data center ever made
               </p>
             </div>
             <div
