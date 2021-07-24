@@ -70,8 +70,8 @@ const VerticalFeatures = () => {
             </li>
           </ul>
           <p className="text-gray-1200 text-left lg:text-3xl text-2xl">
-            Air cooling inefficiencys in heat removal lead to the following
-            consequences
+            All these issues are consequence of the poor heat removal capability
+            of air cooling
           </p>
         </div>
       </div>
