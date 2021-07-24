@@ -102,8 +102,8 @@ const VerticalFeatures = () => {
 
           <ul className="flex flex-col text-left text-2xl py-6">
             <li className="text-gray-1200">
-              Will save 96% of the energy wasted for cooling in air-cooled data
-              center.
+              • Will save 96% of the energy wasted for cooling in air-cooled
+              data center.
             </li>
             <li className="text-gray-1200">
               • Same IT power as air-cooled data centers in a 75% smaller
