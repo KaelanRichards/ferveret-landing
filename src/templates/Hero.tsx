@@ -19,11 +19,11 @@ const Hero = () => {
       className="bg-gray-1300  lg:w-full lg:h-full"
       style={{ fontFamily: "Mulish" }}
     >
-      <div className="flex flex-col lg:flex-row md:pl-5 pt-10 lg:w-full lg:h-full ">
-        <div className="md:px-10 px-6 lg:w-full lg:h-full  flex flex-col">
+      <div className="flex flex-col px-4 lg:flex-row pt-10 lg:w-full lg:h-full ">
+        <div className="lg:w-full lg:h-full lg:pr-4 pb-4 flex flex-col">
           <div
             data-aos="fade-up"
-            className="text-left md:mr-12 xl:pt-12 xl:px-12 p-6 pt-4 flex-shrink-0 shadow rounded-md	bg-primary-1100"
+            className="text-left  xl:pt-12 xl:px-12 p-6 pt-4 flex-shrink-0 shadow rounded-md	bg-primary-1100"
           >
             <h1 className="lg:text-2xl text-2xl text-gray-1200 font-black">
               /fervēret/
@@ -40,7 +40,7 @@ const Hero = () => {
                 // background: "rgb(255,255,255)",
               }}
             />
-            <div className="xl:text-4xl w-full text-3xl mt-6 mb-16 mr-12 text-left text-gray-1200 font-black">
+            <div className="xl:text-4xl lg:text-3xl text-2xl w-full  mt-6 mb-16 mr-12 text-left text-gray-1200 font-black">
               <p>
                 Ferveret develops{" "}
                 <span className="text-logo-100">liquid cooling technology</span>{" "}

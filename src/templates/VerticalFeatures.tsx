@@ -17,52 +17,47 @@ const VerticalFeatures = () => {
 
   return (
     <div className="md:grid-rows-10">
-      <div className="flex flex-col items-center pt-60 bg-gray-1300 px-6 sm:px-12 md:px-16 lg:px-60">
-        <h1 className="lg:text-5xl text-4xl font-bold text-gray-1200 p-3 w-full text-left">
-          Data centers are dirty and expensive{" "}
-        </h1>
-        <p
-          className="text-1xl md:text-2xl text-gray-1200 p-3 text-left "
+      <div className="flex flex-col items-center lg:pt-60 pt-28 bg-gray-1300 px-4 sm:px-12 md:px-16 lg:px-60">
+        <div
           data-aos="fade-up"
+          className="p-6 flex-shrink-0 shadow rounded-md	bg-primary-1100"
         >
-          If nothing changes, data centers will generate about 14% of the total
-          worldwide carbon emission by 2040. About 40% of these emissions is due
-          to inefficient cooling, which is also expensive.
-        </p>
-        <div className="" data-aos="fade-up" data-aos-delay="1000">
-          <img className="h-full w-full" src="/assets/images/lineCharts.png" />
+          <h1 className="lg:text-5xl text-3xl font-bold text-gray-1200 p-3 w-full text-left">
+            Data centers are dirty and expensive{" "}
+          </h1>
+          <p className="text-1xl md:text-2xl text-gray-1200 p-3 text-left ">
+            If nothing changes, data centers will generate about 14% of the
+            total worldwide carbon emission by 2040. About 40% of these
+            emissions is due to inefficient cooling, which is also expensive.
+          </p>
+          <div className="" data-aos-delay="1000">
+            <img
+              className="h-full w-full"
+              src="/assets/images/lineCharts.png"
+            />
+          </div>
+          <h1 className="md:text-4xl text-3xl font-bold text-gray-1200 w-full p-1 text-left">
+            <span className="gradient">ferveret</span> technology
+          </h1>
+          <p className="md:text-2xl text-1xl text-gray-1200 p-1 w-full text-left">
+            Eliminates this waste of money and the associated emissions.
+          </p>
         </div>
       </div>
-      <div
-        className="flex flex-col items-center bg-gray-1300 px-6 sm:px-6 md:px-16 lg:px-60 "
-        style={{ paddingBottom: "15%" }}
-      >
-        <h1
-          className="md:text-4xl text-3xl font-bold text-gray-1200 w-full p-1 text-left"
-          data-aos="fade-up"
-        >
-          <span className="gradient">ferveret</span> technology
-        </h1>
-        <p
-          className="md:text-2xl text-1xl text-gray-1200 p-1 w-full text-left"
-          data-aos="fade-up"
-        >
-          Eliminates this waste of money and the associated emissions.
-        </p>
-      </div>
-      <div className="max-w-screen-xlg bg-gray-1300 pt-36  px-6 sm:px-12 md:px-16 xl:px-60">
+
+      <div className="max-w-screen-xlg bg-gray-1300 lg:pt-56 pt-24 px-4 sm:px-12 md:px-16 xl:px-60">
         <div
-          className="text-center p-12 flex-shrink-0 shadow rounded-md	bg-primary-1100"
+          className="text-center lg:p-12 p-6 flex-shrink-0 shadow rounded-md	bg-primary-1100"
           data-aos="fade-up"
         >
           <h2
-            className="lg:text-5xl text-4xl text-gray-1200 font-bold text-left"
+            className="lg:text-5xl text-3xl text-gray-1200 font-bold text-left"
             // eslint-disable-next-line
           >
             Data centers today – Air cooled
           </h2>
 
-          <ul className="flex flex-col text-left text-2xl py-6">
+          <ul className="flex flex-col text-left lg:text-2xl text-1xl py-6">
             <li className="text-gray-1200 ">
               • 40% of the total electricity in a typical data centers today is
               wasted for cooling the servers.
@@ -74,15 +69,15 @@ const VerticalFeatures = () => {
               • Air cooling has high maintenance and labor costs
             </li>
           </ul>
-          <p className="text-gray-1200 text-left text-3xl">
+          <p className="text-gray-1200 text-left lg:text-3xl text-2xl">
             Air cooling inefficiencys in heat removal lead to the following
             consequences
           </p>
         </div>
       </div>
-      <div className="pt-6 px-6 sm:px-12 md:px-16 xl:px-60 bg-gray-1300">
+      <div className="pt-6 px-4 sm:px-12 md:px-16 xl:px-60 bg-gray-1300">
         <div
-          className="m-auto w-full pb-64  "
+          className="m-auto w-full lg:pb-64 pb-32 "
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -92,15 +87,15 @@ const VerticalFeatures = () => {
 
       <div
         data-aos="fade-up"
-        className="max-w-screen-xlg bg-gray-1300 px-6 sm:px-12 md:px-16 xl:pl-48 xl:pr-72"
+        className="max-w-screen-xlg bg-gray-1300 px-4 sm:px-12 md:px-16 xl:px-60"
       >
-        <div className="text-center p-12 flex-shrink-0 shadow rounded-md	bg-primary-1100">
-          <h2 className="lg:text-5xl text-4xl text-gray-1200 font-bold text-left">
+        <div className="text-center lg:p-12 p-6 flex-shrink-0 shadow rounded-md	bg-primary-1100">
+          <h2 className="lg:text-5xl text-3xl text-gray-1200 font-bold text-left">
             <span className="gradient">ferveret</span> technology – Subcooled
             boiling
           </h2>
 
-          <ul className="flex flex-col text-left text-2xl py-6">
+          <ul className="flex flex-col text-left lg:text-2xl text-1xl py-6">
             <li className="text-gray-1200">
               • Will save 96% of the energy wasted for cooling in air-cooled
               data center.
@@ -113,13 +108,13 @@ const VerticalFeatures = () => {
               • Minimum maintenance and labor costs.
             </li>
           </ul>
-          <p className="text-gray-1200 text-left text-3xl">
+          <p className="text-gray-1200 text-left lg:text-3xl text-2xl">
             Ferveret technology reduces the chip temperature by a factor 2
             enabling more powerful (~2X) CPUs and GPUs.
           </p>
         </div>
       </div>
-      <div className="px-6 pt-6 sm:px-12 md:px-16 xl:pr-48 xl:pl-72 bg-gray-1300">
+      <div className="px-4 pt-6 sm:px-12 md:px-16 xl:px-60 bg-gray-1300">
         <div
           className="m-auto w-full pb-36  "
           data-aos="fade-up"
@@ -155,55 +150,48 @@ const VerticalFeatures = () => {
       </div> */}
       <div
         data-aos="fade-down"
-        className="font-bold lg:text-center text-gray-1200 bg-gray-1300 text-3xl text-center md:text-6xl pt-44 pb-12 px-6 sm:pl-12 md:pl-16 lg:pl-35 "
+        className="font-bold lg:text-left text-gray-1200 bg-gray-1300 text-4xl text-center md:text-6xl lg:pt-44 pt:12 pt-8 px-4 sm:pl-12 md:pl-16 lg:pl-35 "
       >
         <h2>
           <span className="gradient">ferveret</span> technology
         </h2>
       </div>
-      <div className="flex xl:flex-row flex-col bg-gray-1300  pb-48 ">
+      <div className="flex xl:flex-row flex-col justify-center bg-gray-1300 pt-4 pb-52 ">
         <div
-          className="flex flex-col xl:w-1/2 w-full space-y-6 px-6 sm:pl-12 md:pl-16 lg:pl-35"
+          className="flex flex-col xl:w-1/2 w-full justify-center space-y-6 px-4 sm:pl-12 md:pl-16 lg:pl-35"
           data-aos="fade-right"
         >
-          <div className="p-12 flex-shrink-0 shadow rounded-md	bg-primary-1100">
+          <div className="lg:p-12 p-6 flex-shrink-0 shadow rounded-md	bg-primary-1100">
             <div className="font-bold md:text-left text-gray-1200 text-3xl text-center md:text-4xl">
               How ferveret technology works
             </div>
-            <p
-              className="pt-4"
-              style={{ lineHeight: "1.5", fontSize: "1.1rem" }}
-            >
+            <p className="pt-4 lg:text-2xl text-1xl">
               Our technology uses a cooling process called subcooled nucleate
               boiling. This is the cooling process used in nuclear reactors, by
               which our tank design is inspired.
             </p>
 
-            <p style={{ paddingTop: "15px", lineHeight: "1.5" }}>
-              {" "}
+            <p className="pt-4 lg:text-2xl text-1xl">
               Our tanks can turn your air-cooled data center into a
               Ferveret-cooled data center. overnight.
             </p>
           </div>
-          <div className="p-12 flex-shrink-0 shadow rounded-md	bg-primary-1100">
+          <div className="lg:p-12 p-6 flex-shrink-0 shadow rounded-md	bg-primary-1100">
             <div className="font-bold md:text-left text-gray-1200 text-3xl text-center md:text-4xl">
               How our technology is different than our competitors
             </div>
-            <p
-              className="pt-4"
-              style={{ lineHeight: "1.5", fontSize: "1.1rem" }}
-            >
+            <p className="pt-4 lg:text-2xl text-1xl">
               There are many companies in the immersion cooling space. Their
               technology is either based on single phase immersion cooling or
               two phase immersion cooling. Each company tries to make the case
               that one is better than the other one.
             </p>
-            <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
+            <p className="pt-4 lg:text-2xl text-1xl">
               At Ferveret, we understand pro and cons of both techniques, so our
               technology combines both. We take advantages of their pros, and
               eliminate the cons
             </p>
-            <p style={{ paddingTop: "15px", fontSize: "1.1rem" }}>
+            <p className="pt-4 lg:text-2xl text-1xl">
               Subcooled nucleate boiling allows removing exceptionally high heat
               fluxes from processors or other heat generating components. While
               we take advantage of the phase change (i.e., boiling) on top of
@@ -215,7 +203,8 @@ const VerticalFeatures = () => {
             </p>
           </div>
         </div>
-        <div className="xl:w-7/12 xl:p-0 xl:pr-4 h-full sm:px-12 md:px-16 pt-4">
+
+        <div className="xl:w-7/12 xl:p-0 xl:pr-4 h-full sm:px-12 md:px-16 p-4 pt-4">
           <Video src="/assets/videos/video3.mp4" delay={100} />
         </div>
       </div>
