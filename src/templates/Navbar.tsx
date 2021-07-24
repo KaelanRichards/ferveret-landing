@@ -3,8 +3,10 @@ import { Logo } from "../components/logo/Logo";
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex justify-center py-16 bg-gray-1300">
-        <Logo />
+      <div className="bg-gray-1300">
+        <div className="flex justify-center m-1 py-8 shadow rounded-md bg-primary-1100">
+          <Logo />
+        </div>
       </div>
     </nav>
   );

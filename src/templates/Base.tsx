@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 import { VerticalFeatures } from "./VerticalFeatures";
 
 const Base = () => (
-  <div className="antialiased text-gray-600">
+  <div className="antialiased bg-gray-1300" style={{ fontFamily: "Mulish" }}>
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
     <Hero />

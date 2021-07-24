@@ -15,34 +15,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-gray-1300" style={{ fontFamily: "Mulish" }}>
-      <div className="flex flex-col lg:flex-row md:pl-5 ">
-        <div className="md:px-10 px-6 lg:w-6/12  flex flex-col ">
-          <div className="md:text-left md:mr-12 xl:pt-12 xl:px-12 pt-4 flex-shrink-0">
-            <h1
-              className="lg:text-2xl text-2xl text-gray-1200 font-bold"
-              data-aos="fade-up"
-            >
+    <div
+      className="bg-gray-1300  lg:w-full lg:h-full"
+      style={{ fontFamily: "Mulish" }}
+    >
+      <div className="flex flex-col lg:flex-row md:pl-5 pt-10 lg:w-full lg:h-full ">
+        <div className="md:px-10 px-6 lg:w-full lg:h-full  flex flex-col">
+          <div
+            data-aos="fade-up"
+            className="text-left md:mr-12 xl:pt-12 xl:px-12 p-6 pt-4 flex-shrink-0 shadow rounded-md	bg-primary-1100"
+          >
+            <h1 className="lg:text-2xl text-2xl text-gray-1200 font-black">
               /fervēret/
             </h1>
-            <p data-aos="fade-up">
+            <p>
               Ferveret is a Latin word for boiling, which is what we believe
               will revolutionize the future of data centers.
             </p>
             <hr
-              className="mt-20"
+              className="mt-6 bg-gray-1300"
               style={{
                 height: "3px",
                 border: "none",
                 // background: "rgb(255,255,255)",
-                background: "grey",
               }}
-              data-aos="fade-up"
             />
-            <div
-              className="xl:text-4xl text-3xl mt-12 mb-16 mr-12 text-gray-1200"
-              data-aos="fade-up"
-            >
+            <div className="xl:text-4xl w-full text-3xl mt-6 mb-16 mr-12 text-left text-gray-1200 font-black">
               <p>
                 Ferveret develops{" "}
                 <span className="text-logo-100">liquid cooling technology</span>{" "}
@@ -50,15 +48,12 @@ const Hero = () => {
                 sustainable data center ever made
               </p>
             </div>
-            <div
-              className="flex flex-row justify-start mt-20 pb-12"
-              data-aos="fade-up"
-            >
+            <div className="flex flex-row justify-start mt-20 pb-12 ">
               <input
                 style={{ width: "80%", padding: "2%" }}
                 placeholder="email"
                 type="text"
-                className="text-line"
+                className="bg-gray-1300 text-line"
               />
 
               <Button primary>
@@ -68,7 +63,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="bg-gray-1100 lg:w-7/12  h-full">
+        <div className="bg-gray-1100 lg:w-full h-full rounded-md shadow-md">
           <Video src="/assets/videos/video4.mp4" />
         </div>
       </div>

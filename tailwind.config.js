@@ -42,8 +42,8 @@ module.exports = {
           900: "#1a202c",
           1000: "#303030",
           1100: "#080708",
-          1200: "#656565", // hero text color
-          1300: "#F3F3F3", // hero background color
+          1200: "#000000", // hero text color
+          1300: "#F0F2F5", // hero background color
           1400: "#303030", // card colors
           1500: "#A8A8A8", // card text color
           1600: "#272727", // black background
@@ -52,6 +52,8 @@ module.exports = {
           1900: "#D1D1D1", // metric card text color
           2000: "#000000", // secondary black background
           2100: "#3E3E3E", // founder card text color
+          2200: "#242526", // card background gray on black
+          2300: "#ffffff", // font on gray on black
         },
         logo: {
           100: "#2FA9DE",
