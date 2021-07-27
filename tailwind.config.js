@@ -41,7 +41,7 @@ module.exports = {
           800: "#2d3748",
           900: "#1a202c",
           1000: "#303030",
-          1100: "#080708",
+          1100: "#18191A", // animation black background
           1200: "#000000", // hero text color
           1300: "#F0F2F5", // hero background color
           1400: "#303030", // card colors
