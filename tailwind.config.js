@@ -41,7 +41,7 @@ module.exports = {
           800: "#2d3748",
           900: "#1a202c",
           1000: "#303030",
-          1100: "#18191A", // animation black background
+          1100: "#F3F3F3", // animation black background
           1200: "#000000", // hero text color
           1300: "#F0F2F5", // hero background color
           1400: "#303030", // card colors
@@ -54,6 +54,7 @@ module.exports = {
           2100: "#3E3E3E", // founder card text color
           2200: "#242526", // card background gray on black
           2300: "#ffffff", // font on gray on black
+          2400: "#030303", // navbar black background
         },
         logo: {
           100: "#2FA9DE",
@@ -72,6 +73,10 @@ module.exports = {
       fontFamily: {
         sans: ["Manrope", "Roboto", "Helvetica", "Arial", "sans-serif"],
       },
+      backgroundImage: () => ({
+        "solution-hero": "url('/assets/images/heatSink.png')",
+        "home-hero": "url('/assets/images/bubbles.png')",
+      }),
     },
   },
   variants: {},

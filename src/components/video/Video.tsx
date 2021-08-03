@@ -20,7 +20,7 @@ const Video = (props: IVideoProps) => {
   return (
     <Waypoint onEnter={() => handlePlayVideo()}>
       <video
-        className="mx-w-full h-full w-full shoadow-md rounded-md"
+        className="mx-w-full h-full w-full"
         playsInline
         muted
         loop
