@@ -32,7 +32,6 @@ const VerticalFeatures = () => {
 
   const submitEmail = (e: any) => {
     e.preventDefault();
-    console.log(email);
     const req = { email };
 
     axios
