@@ -53,17 +53,13 @@ const Team = () => {
       <div className="bg-gray-1300 flex flex-col xl:flex-row xl:space-x-3 justify-evenly pb-40 pt-8 px:6 sm:px-12 md:px-16 xl:px-60 items-center">
         <FounderCard
           name="Reza Azizian"
-          description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.`}
-          image="/assets/images/founder1.png"
+          description={`Reza is the CEO and co-founder of ferveret. He is an MIT alumnus and has more than 7 years of experience in the electronic cooling industry. This includes designing a thermal solution for Microsoft HoloLens, senior packaging thermal engineer at NVIDIA, and senior design thermal engineer at Cruise. `}
+          image="/assets/images/founder1.jpg"
         />
         <FounderCard
           name="Matteo Bucci"
-          description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.`}
-          image="/assets/images/founder2.png"
+          description="Matteo is the CTO and co-founder of ferveret and faculty in Nuclear Science and Engineering at MIT. His field of expertise is boiling heat transfer. Matteo is also a consultant for the nuclear industry and editor of Applied Thermal Engineering. He graduated from the University of Pisa, Italy (M.Sc. 2005, Ph.D. 2009), and before joining MIT and founding ferveret, he worked as a researcher at CEA Paris, France.."
+          image="/assets/images/founder2.jpg"
         />
       </div>
       <div className="flex flex-col lg:px-60 pb-32 px-6">

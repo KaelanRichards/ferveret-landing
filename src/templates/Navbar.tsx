@@ -3,16 +3,26 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { Logo } from "../components/logo/Logo";
 
 const Navbar = () => {
+  const router = useRouter();
+
+  const changeRoute = () => {
+    router.push("/");
+  };
   const [active, setActive] = useState(false);
   return (
     <nav className="sticky top-0">
       <div className="bg-gray-2400 flex flex-row justify-between ">
         <div className="p-8 pl-6">
-          <Logo />
+          <div className="cursor-pointer" onClick={() => changeRoute()}>
+            <Link href="/solution" passHref>
+              <Logo />
+            </Link>
+          </div>
         </div>
         <div className="flex flew-row items-center justify-end w-full p-4">
           <ul className={`nav-menu ${active ? "active" : ""}`}>

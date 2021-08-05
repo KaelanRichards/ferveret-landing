@@ -32,11 +32,19 @@ const VerticalFeatures = () => {
 
   const submitEmail = (e: any) => {
     e.preventDefault();
+    console.log(email);
     const req = { email };
-    axios.post(
-      "https://sheet.best/api/sheets/48e877a9-502b-409a-a5ba-607e190ab423",
-      req
-    );
+
+    axios
+      .post(
+        "https://sheet.best/api/sheets/48e877a9-502b-409a-a5ba-607e190ab423",
+        req
+      )
+      .then((response) => {
+        if (response.status !== 200) return;
+        alert("successfully subscribed!");
+        setEmail("");
+      });
   };
 
   return (
