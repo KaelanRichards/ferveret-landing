@@ -1,49 +1,45 @@
 /* eslint-disable no-console */
 import React, { useState } from "react";
 
+import emailjs, { init } from "emailjs-com";
+
 import { FounderCard } from "../components/cards/FounderCard";
 import { Meta } from "../layout/Meta";
 import { Footer } from "../templates/Footer";
 import Navbar from "../templates/Navbar";
 import { AppConfig } from "../utils/AppConfig";
 
+init("user_LSNh7oV7YpOPWorlYZFs8");
+
 const Team = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: any) => {
-    e.preventDefault();
+    const req = { name, email, company, message };
 
-    const data = {
-      name,
-      email,
-      message,
-      company,
-    };
-
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => {
-        if (res.status === 200) {
-          setSubmitted(true);
-          setName("");
-          setEmail("");
-          setMessage("");
-          setCompany("");
+    e.preventDefault(); // Prevents default refresh by the browser
+    emailjs
+      .send(
+        `service_wxthxw9`,
+        "template_nnptjyt",
+        req,
+        "user_LSNh7oV7YpOPWorlYZFs8"
+      )
+      .then(
+        (result: any) => {
+          // eslint-disable-next-line no-alert
+          alert(
+            `Message Sent, We will get back to you shortly: ${result.text}`
+          );
+        },
+        (error: any) => {
+          // eslint-disable-next-line no-alert
+          alert(`An error occurred, Please try again: ${error.text}`);
         }
-      })
-      .catch((err: any) => {
-        console.log(err);
-      });
+      );
   };
   return (
     <div className="antialiased bg-gray-1300" style={{ fontFamily: "Mulish" }}>
@@ -126,19 +122,15 @@ const Team = () => {
             />
           </label>
 
-          {!submitted ? (
-            <button
-              className="bg-blue-500 hover:bg-blue-700 w-28 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-              onClick={(e) => {
-                handleSubmit(e);
-              }}
-            >
-              Submit
-            </button>
-          ) : (
-            <div>submitted!</div>
-          )}
+          <button
+            className="bg-blue-500 hover:bg-blue-700 w-28 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
+          >
+            Submit
+          </button>
         </form>
       </div>
 
