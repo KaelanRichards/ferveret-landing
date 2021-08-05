@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -13,6 +14,8 @@ import { MetricCard } from "../components/cards/MetricCard";
 import { Video } from "../components/video/Video";
 
 const VerticalFeatures = () => {
+  const [email, setEmail] = React.useState("");
+
   // AOS animation library initialization
   useEffect(() => {
     Aos.init({
@@ -25,6 +28,15 @@ const VerticalFeatures = () => {
 
   const changeRoute = () => {
     router.push("/solution");
+  };
+
+  const submitEmail = (e: any) => {
+    e.preventDefault();
+    const req = { email };
+    axios.post(
+      "https://sheet.best/api/sheets/48e877a9-502b-409a-a5ba-607e190ab423",
+      req
+    );
   };
 
   return (
@@ -181,11 +193,42 @@ const VerticalFeatures = () => {
           />
         </div>
       </div>
+
       <div className="flex flex-col bg-primary-1100 pt-16">
         <div className="text-center text-6xl font-bold">Backed by</div>
         <div className="flex lg:flex-row flex-col lg:space-x-56 justify-center pt-36 pb-72">
           <img src="/assets/images/yc.png" />
           <img src="/assets/images/e14.png" />
+        </div>
+      </div>
+      <div className="bg-gray-1100">
+        <div className="text-5xl text-center font-bold pt-36">
+          Get the latest ferveret news
+        </div>
+        <div className="text-center text-2xl pt-4">
+          sign up below to get the latest news and updates:
+        </div>
+        <div className="lg:px-96 pt-8">
+          {" "}
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            type="text"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            name="Company"
+          />
+        </div>
+        <div className="flex justify-center items-center pb-36">
+          <button
+            className="bg-blue-500  hover:bg-blue-700 w-28 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+            onClick={(e) => {
+              submitEmail(e);
+            }}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
