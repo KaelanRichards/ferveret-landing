@@ -13,10 +13,10 @@ const solution = () => {
       <Navbar />
       {/* todo fix opacity */}
       <div className="flex flex-col items-center bg-solution-hero bg-opacity-25	">
-        <div className="text-6xl font-bold text-primary-1100 pt-80">
-          How ferveret technology works
+        <div className="lg:text-6xl text-5xl font-bold text-primary-1100 lg:pt-80 pt-16 px-6">
+          How <span className="gradient">ferveret</span> technology works
         </div>
-        <div className="text-3xl text-center text-primary-1100 px-56 pt-24 pb-96">
+        <div className="text-3xl text-center text-primary-1100 lg:px-56 pt-24 pb-96">
           Our technology uses a cooling process called subcooled nucleate
           boiling. This is the cooling process used in nuclear reactors, by
           which our tank design is inspired.
@@ -51,10 +51,10 @@ const solution = () => {
         </div>
       </div>
 
-      <div className="flex xl:flex-row flex-col justify-center bg-primary-1100 pt-32 pb-52 px:8 sm:px-12 md:px-16 lg:px-96 py-8">
+      <div className="flex xl:flex-row flex-col justify-center bg-primary-1100 pt-32 pb-52 px:8 sm:px-12 md:px-16 lg:px-72 py-8">
         <div className="lg:p-40 p-6 space-y-8 flex-shrink-0 shadow-lg	bg-primary-1100 w-full">
           <div className="font-bold md:text-center text-gray-1200 text-3xl text-center md:text-5xl ">
-            How our technology is different than our competitors
+            How our technology is different than our competitors?
           </div>
           <p className="pt-4 lg:text-2xl text-1xl text-center">
             There are many companies in the immersion cooling space. Their

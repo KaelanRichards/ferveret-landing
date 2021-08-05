@@ -1,90 +1,137 @@
-import React from "react";
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from "react";
 
 import Link from "next/link";
 
 import { Logo } from "../components/logo/Logo";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
   return (
     <nav className="sticky top-0">
-      <div
-        className="bg-gray-2400 flex flex-row justify-between  topnav"
-        id="myTopnav"
-      >
-        <div className="p-5">
+      <div className="bg-gray-2400 flex flex-row justify-between ">
+        <div className="p-8 pl-6">
           <Logo />
         </div>
-        <div className="flex flew-row justify-end p-4">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/solution">
-            <a>Our Solution</a>
-          </Link>
-          <Link href="/team">
-            <a>Team</a>
-          </Link>
-          <Link href="/team">
-            <a>Contact</a>
-          </Link>
-
-          <a href="" className="icon">
-            <i className="fa fa-bars" />
-          </a>
+        <div className="flex flew-row items-center justify-end w-full p-4">
+          <ul className={`nav-menu ${active ? "active" : ""}`}>
+            <li className="nav-item">
+              <Link href="/">
+                <a onClick={() => setActive(false)} className="nav-link">
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/solution">
+                <a onClick={() => setActive(false)} className="nav-link">
+                  Our Solution
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/team">
+                <a onClick={() => setActive(false)} className="nav-link">
+                  Team
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/team">
+                <a onClick={() => setActive(false)} className="nav-link">
+                  Contact
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <div
+            className={`hamburger ${active ? "active" : ""}`}
+            onClick={() => setActive(!active)}
+          >
+            <span className="bar" />
+            <span className="bar" />
+            <span className="bar" />
+          </div>
         </div>
       </div>
       <style jsx>
         {`
-          .topnav {
-            overflow: hidden;
-          }
-
-          .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-          }
-
-          .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-
-          .topnav a.active {
-            background-color: #04aa6d;
-            color: white;
-          }
-
-          .topnav .icon {
+          .hamburger {
             display: none;
           }
-          @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {
-              display: none;
-            }
-            .topnav a.icon {
-              float: right;
-              display: block;
-            }
+
+          .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #ffffff;
+          }
+          .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
           }
 
-          @media screen and (max-width: 600px) {
-            .topnav.responsive {
-              position: relative;
+          .nav-item {
+            margin-left: 1rem;
+          }
+
+          .nav-link {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #ffffff;
+          }
+
+          .nav-link:hover {
+            color: #a0aec0;
+          }
+
+          .nav-logo {
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: #482ff7;
+          }
+          @media only screen and (max-width: 768px) {
+            .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 5rem;
+              flex-direction: column;
+              background-color: #000;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             }
-            .topnav.responsive a.icon {
-              position: absolute;
-              right: 0;
-              top: 0;
+
+            .nav-menu.active {
+              left: 0;
             }
-            .topnav.responsive a {
-              float: none;
+
+            .nav-item {
+              margin: 2.5rem 0;
+            }
+
+            .hamburger {
               display: block;
-              text-align: left;
+              cursor: pointer;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
             }
           }
         `}
