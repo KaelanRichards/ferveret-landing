@@ -30,7 +30,7 @@ const Hero = () => {
     >
       <div className="relative z-30">
         <div className="flex flex-col lg:w-1/2 pt-16 lg:px-20 px-6">
-          <div className="text-7xl font-bold text-gray-1200 w-full p-1 text-left">
+          <div className="lg:text-7xl text-6xl  font-bold text-gray-1200 w-full p-1 text-left">
             <span className="gradient">ferveret</span>
           </div>
           <hr
