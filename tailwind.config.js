@@ -74,7 +74,7 @@ module.exports = {
         sans: ["Manrope", "Roboto", "Helvetica", "Arial", "sans-serif"],
       },
       backgroundImage: () => ({
-        "solution-hero": "url('/assets/images/heatSink.png')",
+        "solution-hero": "url('/assets/images/heatSink.jpg')",
         "home-hero": "url('/assets/images/bubbles.png')",
       }),
     },
