@@ -81,7 +81,7 @@ const VerticalFeatures = () => {
           to inefficient cooling, which is also expensive.
         </p>
         <div className="" data-aos-delay="1000">
-          <img className="h-full w-full" src="/assets/images/lineCharts.png" />
+          <img className="h-full w-full" src="/assets/images/lineCharts.jpg" />
         </div>
         <h1 className="md:text-4xl text-3xl font-bold text-gray-1200 w-full p-1 text-center">
           <span className="gradient">ferveret</span> technology

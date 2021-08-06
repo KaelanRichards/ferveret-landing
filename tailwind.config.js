@@ -14,6 +14,7 @@ module.exports = {
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
+      "7xl": "10rem",
     },
     extend: {
       colors: {
@@ -75,7 +76,7 @@ module.exports = {
       },
       backgroundImage: () => ({
         "solution-hero": "url('/assets/images/heatSink.jpg')",
-        "home-hero": "url('/assets/images/bubbles.png')",
+        "home-hero": "url('/assets/videos/video4.mp4')",
       }),
     },
   },

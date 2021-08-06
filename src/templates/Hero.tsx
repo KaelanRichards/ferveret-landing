@@ -25,49 +25,61 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-home-hero lg:w-full lg:h-full"
+      className="lg:w-full lg:h-full relative flex items-center justify-center h-screen overflow-hidden"
       style={{ fontFamily: "Mulish" }}
     >
-      <div className="flex flex-col lg:w-1/2 pt-16 lg:px-20 px-6">
-        <div className="w-full">
-          <img alt="logo" src="/assets/images/logo.png" />;{" "}
-        </div>
-        <hr
-          className="mt-6  bg-gray-1300"
-          style={{
-            height: "3px",
-            border: "none",
-            // background: "rgb(255,255,255)",
-          }}
-        />
-        <div className="lg:w-full lg:h-full pb-4 flex flex-col">
-          <div data-aos="fade-up" className="text-left  xl:pt-12 pt-4">
-            <h1 className="lg:text-2xl text-2xl text-primary-1100 font-black">
-              /fervēret/
-            </h1>
-            <p className="text-primary-1100">
-              ferveret is a Latin word for boiling, which is what we believe
-              will revolutionize the future of data centers.
-            </p>
-
-            <div className="xl:text-4xl lg:text-3xl leading-11 text-2xl w-full pt-12 mb-16  text-left text-primary-1100 font-black">
-              <p>
-                We develop liquid cooling technology for data centers inspired
-                by nuclear power plant cooling.
+      <div className="relative z-30">
+        <div className="flex flex-col lg:w-1/2 pt-16 lg:px-20 px-6">
+          <div className="text-7xl font-bold text-gray-1200 w-full p-1 text-left">
+            <span className="gradient">ferveret</span>
+          </div>
+          <hr
+            className="mt-6  bg-gray-1300"
+            style={{
+              height: "3px",
+              border: "none",
+              // background: "rgb(255,255,255)",
+            }}
+          />
+          <div className="lg:w-full lg:h-full pb-4 flex flex-col">
+            <div data-aos="fade-up" className="text-left  xl:pt-12 pt-4">
+              <h1 className="lg:text-2xl text-2xl text-primary-1100 font-black">
+                /fervēret/
+              </h1>
+              <p className="text-primary-1100">
+                ferveret is a Latin word for boiling, which is what we believe
+                will revolutionize the future of data centers.
               </p>
-            </div>
-            <div className="flex flex-row justify-start pb-60 ">
-              <div className="cursor-pointer	" onClick={() => changeRoute()}>
-                <Link href="/solution" passHref>
-                  <Button primary>
-                    <span style={{ fontSize: "16px" }}>Learn More</span>
-                  </Button>
-                </Link>
+
+              <div className="xl:text-4xl lg:text-3xl leading-11 text-2xl w-full pt-12 mb-16  text-left text-primary-1100 font-black">
+                <p>
+                  We develop liquid cooling technology for data centers inspired
+                  by nuclear power plant cooling.
+                </p>
+              </div>
+              <div className="flex flex-row justify-start pb-60 ">
+                <div className="cursor-pointer	" onClick={() => changeRoute()}>
+                  <Link href="/solution" passHref>
+                    <Button primary>
+                      <span style={{ fontSize: "16px" }}>Learn More</span>
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <video
+        className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="assets/videos/video4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
