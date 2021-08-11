@@ -1,3 +1,5 @@
+/* eslint-disable no-alert */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -54,8 +56,9 @@ const VerticalFeatures = () => {
             <span className="gradient">ferveret</span> technology
           </div>
           <div className="text-primary-1100 text-left text-2xl pt-4">
-            reduces the chip temperature by a factor 2 enabling more powerful
-            (~2X) CPUs and GPUs.
+            Saves data centers 96% in cooling costs, 68% on capital costs and
+            reduce their carbon footprint by 40% while increasing chip
+            performance by 2X
           </div>
           <div className="pt-12">
             <div className="cursor-pointer" onClick={() => changeRoute()}>
@@ -75,18 +78,45 @@ const VerticalFeatures = () => {
         <h1 className="lg:text-6xl text-3xl font-bold text-gray-1200 p-3 w-full text-center px-4">
           Data centers are dirty and expensive{" "}
         </h1>
-        <p className="text-1xl md:text-2xl text-gray-1200 p-3 lg:px-48 text-center ">
+        <p className="text-1xl md:text-2xl text-gray-1200 p-3 lg:px-36 text-center ">
           If nothing changes, data centers will generate about 14% of the total
           worldwide carbon emission by 2040. About 40% of these emissions is due
           to inefficient cooling, which is also expensive.
         </p>
-        <div className="" data-aos-delay="1000">
-          <img className="h-full w-full" src="/assets/images/lineCharts.jpg" />
+        <div className="pt-12" data-aos-delay="1000">
+          <img className="h-full w-full" src="/assets/images/lineCharts.png" />
+          <div className="flex flex-row justify-between pt-4">
+            <div className="w-1/2">
+              <p className="text-xs">
+                {`These are the two references for the left figure (i.e. "Data that
+                will be generated")`}
+              </p>
+              <p className="text-xs">
+                https://www.sciencedaily.com/releases/2013/05/130522085217.htm
+              </p>
+              <p className="text-xs">
+                https://www.hdfstutorial.com/blog/big-data-use-cases-in-banking-and-financial-services/
+              </p>
+            </div>
+            <div className="w-1/2">
+              <p className="text-xs">
+                {`These are the two references for the right figure (i.e. "Carbon
+                emission by data centers")`}
+              </p>
+              <p className="text-xs">
+                https://www.computerworld.com/article/3431148/why-data-centres-are-the-new-frontier-in-the-fight-against-climate-change.html
+              </p>
+              <p className="text-xs">
+                https://www.theguardian.com/environment/2017/dec/11/tsunami-of-data-could-consume-fifth-global-electricity-by-2025
+              </p>
+            </div>
+          </div>
         </div>
-        <h1 className="md:text-4xl text-3xl font-bold text-gray-1200 w-full p-1 text-center">
+
+        <h1 className="md:text-4xl text-3xl font-bold text-gray-1200 w-full p-1 pt-12 text-center">
           <span className="gradient">ferveret</span> technology
         </h1>
-        <p className="md:text-4xl text-3xl font-bold text-gray-1200 lg:px-48 p-1 w-full text-center">
+        <p className="md:text-4xl text-3xl font-bold text-gray-1200 lg:px-36 p-1 w-full text-center">
           eliminates this waste of money and the associated emissions.
         </p>
       </div>

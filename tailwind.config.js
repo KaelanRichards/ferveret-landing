@@ -76,7 +76,7 @@ module.exports = {
       },
       backgroundImage: () => ({
         "solution-hero": "url('/assets/images/heatSink.jpg')",
-        "home-hero": "url('/assets/videos/video4.mp4')",
+        "home-hero": "url('/assets/images/bubbles.jpg')",
       }),
     },
   },

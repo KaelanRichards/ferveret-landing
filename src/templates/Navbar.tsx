@@ -48,7 +48,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/team">
+              <Link href="/contact">
                 <a onClick={() => setActive(false)} className="nav-link">
                   Contact
                 </a>
