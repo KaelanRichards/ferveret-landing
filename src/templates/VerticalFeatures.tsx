@@ -52,7 +52,7 @@ const VerticalFeatures = () => {
     <div className="md:grid-rows-10">
       <div className="flex lg:flex-row flex-col bg-gray-2400 ">
         <div className="lg:pl-20 lg:pr-6 lg:pt-48 px-4 pt-12">
-          <div className="text-primary-1100 text-left text-6xl font-bold">
+          <div className="text-primary-1100 text-left lg:text-6xl text-4xl font-bold">
             <span className="gradient">ferveret</span> technology
           </div>
           <div className="text-primary-1100 text-left text-2xl pt-4">
@@ -83,30 +83,30 @@ const VerticalFeatures = () => {
           worldwide carbon emission by 2040. About 40% of these emissions is due
           to inefficient cooling, which is also expensive.
         </p>
-        <div className="pt-12" data-aos-delay="1000">
+        <div className="pt-12 w-full" data-aos-delay="1000">
           <img className="h-full w-full" src="/assets/images/lineCharts.png" />
           <div className="flex flex-row justify-between pt-4">
             <div className="w-1/2">
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 {`These are the two references for the left figure (i.e. "Data that
                 will be generated")`}
               </p>
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 https://www.sciencedaily.com/releases/2013/05/130522085217.htm
               </p>
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 https://www.hdfstutorial.com/blog/big-data-use-cases-in-banking-and-financial-services/
               </p>
             </div>
             <div className="w-1/2">
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 {`These are the two references for the right figure (i.e. "Carbon
                 emission by data centers")`}
               </p>
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 https://www.computerworld.com/article/3431148/why-data-centres-are-the-new-frontier-in-the-fight-against-climate-change.html
               </p>
-              <p className="text-xs">
+              <p className="text-xs break-all">
                 https://www.theguardian.com/environment/2017/dec/11/tsunami-of-data-could-consume-fifth-global-electricity-by-2025
               </p>
             </div>
@@ -201,7 +201,7 @@ const VerticalFeatures = () => {
         </div>
       </div>
       <div className="flex flex-col bg-gray-1100">
-        <div className="text-center text-6xl font-bold lg:px-96 pt-40 ">
+        <div className="text-center lg:text-6xl text-4xl font-bold lg:px-96 pt-40 ">
           Benefits of working with <span className="gradient">ferveret</span>
         </div>
         <div className="bg-gray-1100 flex flex-wrap justify-evenly pt-20 pb-48 px-6 sm:px-12 md:px-16 lg:px-60">
@@ -232,23 +232,25 @@ const VerticalFeatures = () => {
       </div>
 
       <div className="flex flex-col bg-primary-1100 pt-16">
-        <div className="text-center text-6xl font-bold">Backed by</div>
-        <div className="flex lg:flex-row flex-col lg:space-x-56 justify-center pt-36 pb-72">
-          <img src="/assets/images/yc.png" />
-          <img src="/assets/images/e14.png" />
+        <div className="text-center lg:text-6xl text-4xl font-bold">
+          Backed by
+        </div>
+        <div className="flex lg:flex-row flex-col lg:space-x-56 justify-center items-center pt-36 pb-72">
+          <img className="w-1/2" src="/assets/images/yc.png" />
+          <img className="w-1/2" src="/assets/images/e14.png" />
         </div>
       </div>
       <div className="bg-gray-1100">
-        <div className="text-5xl text-center font-bold pt-36">
+        <div className="lg:text-5xl text-4xl text-center font-bold pt-36 px-6">
           Get the latest ferveret news
         </div>
         <div className="text-center text-2xl pt-4">
           sign up below to get the latest news and updates:
         </div>
-        <div className="lg:px-96 pt-8">
+        <div className="lg:px-96 pt-8 flex justify-center">
           {" "}
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded lg:w-full w-1/2 py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             onChange={(e) => {
               setEmail(e.target.value);
