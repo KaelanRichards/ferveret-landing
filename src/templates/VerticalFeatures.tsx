@@ -236,8 +236,8 @@ const VerticalFeatures = () => {
           Backed by
         </div>
         <div className="flex lg:flex-row flex-col lg:space-x-56 justify-center items-center pt-36 pb-72">
-          <img className="w-1/2" src="/assets/images/yc.png" />
-          <img className="w-1/2" src="/assets/images/e14.png" />
+          <img className="lg:w-2/12 w-1/2" src="/assets/images/yc.png" />
+          <img className="lg:w-1/12 w-1/4" src="/assets/images/e14.png" />
         </div>
       </div>
       <div className="bg-gray-1100">
