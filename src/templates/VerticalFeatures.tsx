@@ -88,10 +88,6 @@ const VerticalFeatures = () => {
           <div className="flex flex-row justify-between pt-4">
             <div className="w-1/2">
               <p className="text-xs break-all">
-                {`These are the two references for the left figure (i.e. "Data that
-                will be generated")`}
-              </p>
-              <p className="text-xs break-all">
                 https://www.sciencedaily.com/releases/2013/05/130522085217.htm
               </p>
               <p className="text-xs break-all">
@@ -99,10 +95,6 @@ const VerticalFeatures = () => {
               </p>
             </div>
             <div className="w-1/2">
-              <p className="text-xs break-all">
-                {`These are the two references for the right figure (i.e. "Carbon
-                emission by data centers")`}
-              </p>
               <p className="text-xs break-all">
                 https://www.computerworld.com/article/3431148/why-data-centres-are-the-new-frontier-in-the-fight-against-climate-change.html
               </p>
